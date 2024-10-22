@@ -5,27 +5,6 @@ import {
     SiFastapi
 } from "react-icons/si";
 
-import {
-    DiJavascript1,
-    DiReact,
-    DiNodejs,
-    DiMongodb,
-    DiPython,
-    DiGit,
-    DiJava,
-    DiAngularSimple,
-    DiMysql,
-    DiGithubFull
-} from "react-icons/di";
-import {
-    SiRedis,
-    SiFirebase,
-    SiNextdotjs,
-    SiSolidity,
-    SiPostgresql,
-} from "react-icons/si";
-import { TbBrandGolang } from "react-icons/tb";
-
 function FramWork() {
     return (
         <Row style={{ justifyContent: "center", paddingBottom: "50px" }}>
