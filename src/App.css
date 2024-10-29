@@ -14,7 +14,7 @@
 }
 
 .App-header {
-  background-color: #282c34;
+  background-color: #a0b819;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -35,4 +35,28 @@
   to {
     transform: rotate(360deg);
   }
+}
+.icon-container {
+  position: relative;
+  display: inline-block;
+}
+
+.icon-container .hover-text {
+  position: absolute;
+  bottom: -30px; /* Adjust the position of the text */
+  left: 50%;
+  transform: translateX(-50%);
+  color: white; /* Change text color if needed */
+  font-size: 14px; /* Adjust size */
+  background-color: rgba(0, 0, 0, 0.7); /* Background for better visibility */
+  padding: 5px;
+  border-radius: 5px;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.icon-container:hover .hover-text {
+  visibility: visible;
+  opacity: 1;
 }

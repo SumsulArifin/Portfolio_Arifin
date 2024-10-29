@@ -5,10 +5,10 @@ import Container from "react-bootstrap/Container";
 import Button from "react-bootstrap/Button";
 import { Link } from "react-router-dom";
 import { CgGitFork } from "react-icons/cg";
+import { MdOutlineWorkOutline } from "react-icons/md";
 import {
   AiFillStar,
   AiOutlineHome,
-  AiOutlineFundProjectionScreen,
   AiOutlineUser,
 } from "react-icons/ai";
 
@@ -74,10 +74,8 @@ function NavBar() {
                 to="/project"
                 onClick={() => updateExpanded(false)}
               >
-                <AiOutlineFundProjectionScreen
-                  style={{ marginBottom: "2px" }}
-                />{" "}
-                Projects
+                <MdOutlineWorkOutline style={{ marginBottom: "2px" }} />{" "}
+                Work
               </Nav.Link>
             </Nav.Item>
 
@@ -91,19 +89,11 @@ function NavBar() {
               </Nav.Link>
             </Nav.Item>
 
-            {/* <Nav.Item>
-              <Nav.Link
-                href="https://soumyajitblogs.vercel.app/"
-                target="_blank"
-                rel="noreferrer"
-              >
-                <ImBlog style={{ marginBottom: "2px" }} /> Blogs
-              </Nav.Link>
-            </Nav.Item> */}
+
 
             <Nav.Item className="fork-btn">
               <Button
-                href="https://github.com/SumsulArifin"
+                href="https://github.com/SumsulArifin/Portfolio_Arifin"
                 target="_blank"
                 className="fork-btn-inner"
               >

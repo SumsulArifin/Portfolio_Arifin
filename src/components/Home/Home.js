@@ -1,7 +1,7 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 // import homeLogo from "../../Assets/home-main.svg";
-import myImg from "../../Assets/ari.png";
+import myImg from "../../Assets/aa.jpg";
 import Particle from "../Particle";
 import Home2 from "./Home2";
 import Type from "./Type";
@@ -37,8 +37,8 @@ function Home() {
                 <img
                   src={myImg}
                   alt="home pic"
-                  className="rounded"
-                  style={{ maxHeight: "450px", borderRadius: "30px" }}
+                  className="rounded-circle  shadow-lg p-3 mb-5 bg-body-tertiary"
+                  style={{ maxHeight: "500px", borderRadius: "30px" }}
                 />
               </Tilt>
             </Col>

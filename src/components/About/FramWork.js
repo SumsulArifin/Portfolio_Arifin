@@ -4,17 +4,42 @@ import {
     SiSpringboot,
     SiFastapi
 } from "react-icons/si";
+import OverlayTrigger from 'react-bootstrap/OverlayTrigger';
+import Popover from 'react-bootstrap/Popover';
+
+
+const popover = (
+    <Popover id="popover-basic">
+        <Popover.Header as="h3">FastAPI</Popover.Header>
+        <Popover.Body>
+            This is a hover-triggered popover with some <strong>FastAPI</strong> related content!
+        </Popover.Body>
+    </Popover>
+);
+
 
 function FramWork() {
     return (
         <Row style={{ justifyContent: "center", paddingBottom: "50px" }}>
+            <OverlayTrigger trigger="click" placement="top" overlay={popover}>
+                <Col xs={4} md={2} className="tech-icons">
+                    <SiSpringboot />
+                </Col>
+            </OverlayTrigger>
+            <OverlayTrigger
+                trigger={['hover', 'focus']} // Activates popover on hover and focus
+                placement="top"              // Controls popover placement
+                overlay={popover}
+            >
+                <Col xs={4} md={2} className="tech-icons">
 
-            <Col xs={4} md={2} className="tech-icons">
-                <SiSpringboot />
-            </Col>
-            <Col xs={4} md={2} className="tech-icons">
-                <SiFastapi />
-            </Col>
+                    <div className="icon-container">
+                        <SiFastapi />
+                    </div>
+
+                </Col>
+            </OverlayTrigger>
+
             {/* <Col xs={4} md={2} className="tech-icons">
                 <DiPython />
             </Col>
